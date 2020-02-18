@@ -1,0 +1,243 @@
+.form-inner {
+    align-items: center;
+    padding-top: 75px;
+  }
+  
+  .nav-link {
+    color: #fff;
+  }
+  
+  .tkwr-img img {
+    width: 120px;
+  }
+  
+  .img-login {
+    width: 381px;
+    padding-top: 80px;
+  }
+  
+  .img-about {
+    width: 381px;
+    padding-top: 80px;
+  }
+  
+  .form-box {
+    background-color: #fff;
+    align-self: flex-start;
+    border-color: blue;
+  }
+  
+  footer {
+    width: 100%;
+    bottom: 0;
+    background-color: #225a7f;
+    color: #fff;
+  }
+
+  footer .copyRight{
+    text-align: center;
+  }
+  
+  /*login*/
+  .formulario {
+    padding-top: 40px;
+    color: #225a7f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* about */
+  .about {
+    padding-top: 40px;
+    color: #225a7f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /*thankyou*/
+  .thkU{
+    padding-top: 40px;
+    color: #225a7f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+
+  /*tecnologia*/
+  .tecno{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  hr{
+      background-color: #225a7f
+  }
+
+  /*Cores padrão do logo Tickware*/
+  /* #225a7f -- Dark
+     #3894c7 -- Light*/
+  
+
+hr.linhaSep {
+    border-top: 5px solid burlywood;
+}
+
+.posCampos{
+    position: absolute;
+    left: 70px;    
+}
+
+.centralizar{   
+    margin: 0 auto;  /*Centraliza o div*/
+    text-align: center; /* Centraliza o conteúdo do div (os botões)*/   
+}
+
+.tabTitulo{
+    margin: 0 auto;  /*Centraliza o div*/
+    text-align: center; /* Centraliza o conteúdo do div (os botões)*/   
+    color: #225a7f;
+    font-size: 24px;
+    font-weight:bolder;
+}
+
+.tabGeral{    
+    border-collapse: collapse;
+    margin: 0 auto;  /*Centraliza tabela*/
+    font-size: 0.9em;
+    min-width: 1024px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);    
+}
+
+.tabGeral thead tr {
+    background-color: #225a7f;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.tabGeral th, td {
+    padding: 12px 15px;
+}
+
+
+.tabGeral tbody tr {
+    border-bottom: 1px solid #dddddd; 
+}
+
+.tabGeral tbody tr:nth-of-type(even) { 
+    /* estiliza os elementos que são o enésimo número de filhos de seu elemento pai.*/
+    /* odd: filhos 1,3,2  even: filhos 2, 4, 6  */    
+    background-color: #f3f3f3;
+}
+
+.tabGeral tbody tr:last-of-type { /*aplica o estilo na última linha*/
+    border-bottom: 2px solid #009879;
+}
+
+.tabGeral th:first-child { width: 70px  }
+.tabGeral th:first-child + th {   text-align: center;}
+.tabGeral th:first-child + th + th {  width: 50px }
+.tabGeral th:first-child + th + th + th {  width: 70px }
+.tabGeral th:first-child + th + th + th + th {  width: 70px }
+
+
+.tabGeral td:first-child { width: 70px  }
+.tabGeral td:first-child + td {   text-align: left;}
+.tabGeral td:first-child + td + td {  width: 50px }
+.tabGeral td:first-child + td + td + td {  width: 70px }
+.tabGeral td:first-child + td + td + td + td {  width: 70px }
+
+.msgExcluir{   
+    margin: 0 auto;  /*Centraliza o div*/
+    text-align: center; /* Centraliza o conteúdo do div (os botões)*/  
+    color: red;
+    font-size: 36px;
+    font-weight:bolder;
+}
+
+.msg-vazio{
+    color: #225a7f;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.card-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width:300px;
+    min-height:400px;
+    background:#fff;
+    box-shadow:0 20px 50px rgba(0,0,0,.1);
+    border-radius:10px;
+    transition:0.5s;
+    color: #225a7f;
+}
+.card:hover {
+    box-shadow:0 30px 70px rgba(0,0,0,.2);
+}
+.card .box {
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    width:100%;
+}
+.card .box .img {
+    width:120px;
+    height:120px;
+    margin:0 auto;
+    border-radius:50%;
+    overflow:hidden;
+}
+.card .box .img img {
+    width:100%;
+    height:100%;
+}
+.card .box h2 {
+    font-size:20px;
+    color:#262626;
+    margin:20px auto;
+}
+.card .box h2 span {
+    font-size:14px;
+    background:#e91e63;
+    color:#fff;
+    display:inline-block;
+    padding:4px 10px;
+    border-radius:15px;
+}
+.card .box p {
+    color:#262626;
+}
+.card .box span {
+    display:inline-flex;
+}
+.card .box ul {
+    margin:0;
+    padding:0;
+}
+.card .box ul li {
+    list-style:none;
+    float:left;
+}
+.card .box ul li a {
+    display:block;
+    color:#aaa;
+    margin:0 10px;
+    font-size:20px;
+    transition:0.5s;
+    text-align:center;
+}
+.card .box ul li:hover a {
+    color:#e91e63;
+    transform:rotateY(360deg);
+}
