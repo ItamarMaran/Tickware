@@ -57,13 +57,11 @@ Planejar e prover soluções de tecnologia unindo rigor técnico e agilidade de 
         <td>Buscar empresas parceiras para treinamento (Alura)</td>
         </tr>
 </table>
-  
 
-
-Itamar Maran Jordao
-
-Feat. Doctor Daniel Guimarães Tiezzi
-
-Flávio Henrique de Assis Silva
-
-Vitor Augusto das Neves Martins de Almeida Santos
+<blockquote>
+  <p> Alice Sakamoto Moreno </p>
+  <p> Feat. Doctor Daniel Guimarães Tiezzi </p>
+  <p> Flávio Henrique de Assis Silva </p>
+  <p> Itamar Maran Jordao </p>
+  <p> Vitor Augusto das Neves Martins de Almeida Santos </p>
+</blockquote>
