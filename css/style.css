@@ -174,14 +174,14 @@ ul#founders li#flavio span, ul#founders li#vitor span {
 }
 
 ul#founders li#felipe {
-	background: url('../_pics/felipe.jpg') no-repeat;
+	background: url('../pics/felipe.jpg') no-repeat;
 	background-position: 50% 60%;
 	background-size: 400px 400px;
 	background-color: #ffffff;
 }
 
 ul#founders li#flavio {
-	background: url('../_pics/flavio.jpg') no-repeat;
+	background: url('../pics/flavio.jpg') no-repeat;
 	background-position: 50% 60%;
 	background-size: 400px 400px;
 	background-color: #ffffff;
@@ -198,14 +198,14 @@ ul#founders li#itamar:hover, ul#founders li#vitor:hover {
 }
 
 ul#founders li#itamar {
-	background: url('../_pics/itamar.jpg') no-repeat;
+	background: url('../pics/itamar.jpg') no-repeat;
 	background-position: 40% 50%;
 	background-size: 400px 400px;
 	background-color: #ffffff;
 }
 
 ul#founders li#vitor {
-	background: url('../_pics/vitor.jpg') no-repeat;
+	background: url('../pics/vitor.jpg') no-repeat;
 	background-position: 70% 50%;
 	background-size: 400px 400px;
 	background-color: #ffffff;
@@ -242,21 +242,21 @@ ul#members li span {
 }
 
 ul#members li#alice {
-	background: url('../_pics/alice.jpg') no-repeat;
+	background: url('../pics/alice.jpg') no-repeat;
 	background-position: 20% 60%;
 	background-size: 400px 400px;
 	background-color: #ffffff;
 }
 
 ul#members li#luis {
-	background: url('../_pics/luis.jpg') no-repeat;
+	background: url('../pics/luis.jpg') no-repeat;
 	background-position: 40% 60%;
 	background-size: 400px 400px;
 	background-color: #ffffff;
 }
 
 ul#members li#marcos {
-	background: url('../_pics/marcos.jpg') no-repeat;
+	background: url('../pics/marcos.jpg') no-repeat;
 	background-position: 50% 45%;
 	background-size: 400px 400px;
 	background-color: #ffffff;
