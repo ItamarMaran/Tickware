@@ -1,4 +1,4 @@
-<img src="https://github.com/ItamarMaran/Tickware/blob/master/prototype_java/img/tkwr_horizontal.png">
+[<img src="https://github.com/ItamarMaran/Tickware/blob/master/prototype_java/img/tkwr_horizontal.png">](https://tickware.com.br/)
 In this repository we find the site prototype about Tickware, inc.
 
 # Apresentação
@@ -65,3 +65,6 @@ Planejar e prover soluções de tecnologia unindo rigor técnico e agilidade de 
   <p> Itamar Maran Jordao </p>
   <p> Vitor Augusto das Neves Martins de Almeida Santos </p>
 </blockquote>
+
+# Referências 
+[RegistroBr e GitHub Pages](https://medium.com/responsive-br/associando-um-dom%C3%ADnio-ao-seu-site-do-github-pages-dc8af66ff745)
