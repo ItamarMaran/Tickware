@@ -2,13 +2,33 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
+/* Blippo D OT Stencil */
+@font-face {
+    font-family: 'Blippo';
+    src: url('../fonts/Blippo.eot');
+    src: url('../fonts/Blippo.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Blippo.woff2') format('woff2'),
+         url('../fonts/Blippo.woff') format('woff'),
+         url('../fonts/Blippo.ttf') format('truetype'),
+         url('../fonts/Blippo.svg#Blippo') format('svg');
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
 	background-color: rgb(56,148,199);
 }
 
+section#logo-tickware {
+	display: block;
+	margin: auto;
+	width: 75%;
+}
+
 h1#logo {
-	word-wrap: break-word;
-	font-family: Righteous;
+	word-wrap: normal;
+	font-family: 'Blippo';
+    font-weight: lighter;
 	font-size: 100pt;
 	text-align: center;
 	color: #ffffff;
@@ -102,8 +122,18 @@ section#body p {
 	color: white;
 	font-size: 20pt;
 	text-align: justify;
-	margin: 0px;
+	margin: auto;
 	padding-left: 10%;
+	padding-right: 12%;
+}
+
+section#body ul#trabalhos p {
+	font-family: Oswald;
+	color: white;
+	font-size: 20pt;
+	text-align: justify;
+	margin: auto;
+	padding-left: 18%;
 	padding-right: 12%;
 }
 
@@ -117,7 +147,6 @@ section#body a:hover {
 }
 
 section#body p#tick {
-	word-wrap: break-word;
 	font-family: Righteous;
 	font-size: 100pt;
 	text-align: center;
@@ -139,7 +168,7 @@ section#body h2 {
 ul#founders {
 	list-style: none;
 	display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
 	overflow: hidden;
 	padding: 77px 17.3% 40px 17.3%;
 }
@@ -152,7 +181,7 @@ ul#founders li {
 	border: 5px solid #ffffff;
 	background-color: #ffffff;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.4);
-	-webkit-transition: all .3s ease-in;	
+	-webkit-transition: all .3s ease-in;
 }
 
 ul#founders li span {
@@ -187,16 +216,6 @@ ul#founders li#flavio {
 	background-color: #ffffff;
 }
 
-ul#founders li#felipe:hover, ul#founders li#flavio:hover  {
-	background-position: 0% 0%;
-	background-size: 200px 200px;
-}
-
-ul#founders li#itamar:hover, ul#founders li#vitor:hover {
-	background-position: 0% 0%;
-	background-size: 200px 200px;
-}
-
 ul#founders li#itamar {
 	background: url('../pics/itamar.jpg') no-repeat;
 	background-position: 40% 50%;
@@ -210,13 +229,23 @@ ul#founders li#vitor {
 	background-size: 400px 400px;
 	background-color: #ffffff;
 }
+
+ul#founders li#felipe:hover, ul#founders li#flavio:hover  {
+	background-position: 0% 0%;
+	background-size: 200px 200px;
+}
+
+ul#founders li#itamar:hover, ul#founders li#vitor:hover {
+	background-position: 0% 0%;
+	background-size: 200px 200px;
+}
+
 /*--------------------------------------------------------------------------------------*/
 section#body div {
 	margin: auto;
 }
 
-ul#IA {
-	margin: auto;
+ul#trabalhos {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;	
@@ -224,8 +253,7 @@ ul#IA {
 	padding: 2% 17% 20% 17%;
 }
 
-ul#IA li {
-	/* float: left; */
+ul#trabalhos li {
 	width: 300px;
 	height: 300px;
 	margin-top: 10px;
@@ -235,24 +263,43 @@ ul#IA li {
 	-webkit-transition: all .3s ease-in;
 }
 
-ul#IA li#veIA:hover {
+ul#trabalhos li#veIA:hover {
 	background-position: 0% 0%;
 	background-size: 300px 300px;
 }
 
-ul#IA li#veIA span {
+ul#trabalhos li#veIA span {
 	font-family: 'Oswald';
 	color: #ffffff;
 	font-size: 15pt;
 	text-shadow: -1.5px 0 #000000, 0 1.5px #000000, 1.5px 0 #000000, 0 -1.5px #000000;
-	/* padding-left: -100px; */
 	margin-left: 10px;
 }
 
-ul#IA li#veIA {
-	background: url('../pics/veIA.png') no-repeat;
+ul#trabalhos li#veIA {
+	background: url('../images/trabalhos/veIA.png') no-repeat;
+	background-position: 10% 10%;
+	background-size: 1000px 1000px;
+	background-color: #ffffff;
+}
+
+ul#trabalhos li#homenail:hover {
 	background-position: 50% 50%;
-	background-size: 400px 400px;
+	background-size: 300px 55.6px;
+}
+
+ul#trabalhos li#homenail span {
+	font-family: 'Oswald';
+	color: #ffffff;
+	font-size: 15pt;
+	text-shadow: -1.5px 0 #000000, 0 1.5px #000000, 1.5px 0 #000000, 0 -1.5px #000000;
+	margin-left: 10px;
+}
+
+ul#trabalhos li#homenail {
+	background: url('../images/trabalhos/logo.png') no-repeat;
+	background-position: 59% 50%;
+	background-size: 1699px 315px;
 	background-color: #ffffff;
 }
 /*--------------------------------------------------------------------------------------*/
