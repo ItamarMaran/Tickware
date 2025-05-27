@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASJ Tecnologia - Soluções Inovadoras para o Agronegócio</title>
+    <meta name="description" content="ASJ Tecnologia, desde 2009, oferece soluções em agricultura de precisão, automação, monitoramento e componentes robustos para o agronegócio brasileiro, com sede em Ribeirão Preto, SP.">
+    <meta name="keywords" content="agricultura de precisão, automação agrícola, tecnologia agrícola, chicotes elétricos, ASJ Tecnologia, Ribeirão Preto, John Deere, drones, IoT">
+    <meta name="author" content="ASJ Tecnologia">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'roboto': ['Roboto', 'sans-serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        'asj-blue': {
+                            light: '#6B9BEA',
+                            DEFAULT: '#3779DD',
+                            dark: '#1F55A5',
+                        },
+                        'asj-gray': {
+                            extralight: '#ECEFF1',
+                            light: '#F5F5F5',
+                            DEFAULT: '#757575',
+                            dark: '#424242',
+                            extradark: '#212121',
+                        }
+                    },
+                    animation: {
+                        'fade-in-down': 'fadeInDown 0.8s ease-out forwards',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out 0.2s forwards',
+                    },
+                    keyframes: {
+                        fadeInDown: {
+                            '0%': { opacity: '0', transform: 'translateY(-20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-roboto bg-asj-gray-extralight text-asj-gray">
+    <header class="bg-white shadow-lg sticky top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center space-x-2 text-3xl font-montserrat font-bold hover:opacity-80 transition-opacity">
+                    <i class="fas fa-leaf text-asj-blue"></i>
+                    <span class="text-asj-blue">ASJ Tecnologia</span>
+                </a>
+                <nav class="hidden md:flex space-x-7 items-center">
+                    <a href="index.html" class="text-asj-gray-dark hover:text-asj-blue transition duration-300 font-medium pb-1 border-b-2 border-transparent hover:border-asj-blue">Início</a>
+                    <a href="sobre.html" class="text-asj-gray-dark hover:text-asj-blue transition duration-300 font-medium pb-1 border-b-2 border-transparent hover:border-asj-blue">Sobre Nós</a>
+                    <a href="tecnologias.html" class="text-asj-gray-dark hover:text-asj-blue transition duration-300 font-medium pb-1 border-b-2 border-transparent hover:border-asj-blue">Tecnologias</a>
+                    <a href="atuacao.html" class="text-asj-gray-dark hover:text-asj-blue transition duration-300 font-medium pb-1 border-b-2 border-transparent hover:border-asj-blue">Atuação</a>
+                    <a href="contato.html" class="text-asj-gray-dark hover:text-asj-blue transition duration-300 font-medium pb-1 border-b-2 border-transparent hover:border-asj-blue">Contato</a>
+                    <a href="https://wa.me/+5519999991234" target="_blank" class="bg-asj-blue hover:bg-asj-blue-dark text-white px-6 py-2.5 rounded-md transition duration-300 font-semibold shadow-md hover:shadow-lg transform hover:scale-105">
+                        <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                    </a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-asj-gray-dark hover:text-asj-blue focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-xl absolute w-full border-t border-asj-gray-light">
+            <a href="index.html" class="block text-asj-gray-dark hover:bg-asj-blue-light hover:text-asj-gray-extradark px-5 py-3.5 transition duration-300 font-medium">Início</a>
+            <a href="sobre.html" class="block text-asj-gray-dark hover:bg-asj-blue-light hover:text-asj-gray-extradark px-5 py-3.5 transition duration-300 font-medium">Sobre Nós</a>
+            <a href="tecnologias.html" class="block text-asj-gray-dark hover:bg-asj-blue-light hover:text-asj-gray-extradark px-5 py-3.5 transition duration-300 font-medium">Tecnologias</a>
+            <a href="atuacao.html" class="block text-asj-gray-dark hover:bg-asj-blue-light hover:text-asj-gray-extradark px-5 py-3.5 transition duration-300 font-medium">Atuação</a>
+            <a href="contato.html" class="block text-asj-gray-dark hover:bg-asj-blue-light hover:text-asj-gray-extradark px-5 py-3.5 transition duration-300 font-medium">Contato</a>
+            <a href="https://wa.me/+5519999991234" target="_blank" class="block bg-asj-blue text-white text-center hover:bg-asj-blue-dark mx-4 my-3 px-5 py-3.5 rounded-md transition duration-300 font-semibold">
+                <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative text-white py-28 md:py-44 bg-cover bg-center" style="background-image: url('https://static.wixstatic.com/media/df660f_ff8c780cc0d64063912acd3d1dc73927~mv2.jpg');">
+            <div class="absolute inset-0 bg-asj-blue/30"></div> <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-montserrat font-bold mb-6 leading-tight animate-fade-in-down">Bem-vindo à ASJ Tecnologia</h1>
+                <p class="text-lg md:text-xl font-roboto mb-10 max-w-3xl mx-auto text-gray-100 animate-fade-in-up">Transformamos o agronegócio com tecnologias inovadoras e impacto sustentável desde 2009, em Ribeirão Preto.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="tecnologias.html" class="bg-asj-blue hover:bg-asj-blue-dark text-white font-bold py-3.5 px-10 rounded-lg text-lg transition duration-300 shadow-xl transform hover:scale-105 animate-fade-in-up">Nossas Tecnologias</a>
+                    <a href="contato.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-asj-blue font-bold py-3.5 px-10 rounded-lg text-lg transition duration-300 shadow-xl transform hover:scale-105 animate-fade-in-up">Entre em Contato</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-asj-blue font-semibold tracking-wider uppercase text-sm">Nossas Ofertas</span>
+                    <h2 class="text-3xl md:text-4xl font-montserrat font-bold text-asj-gray-extradark mt-3">Tecnologia para um Campo Mais Eficiente</h2>
+                    <p class="text-asj-gray font-roboto text-lg mt-4 max-w-2xl mx-auto">Descubra como nossas tecnologias inovadoras transformam o agronegócio. Veja mais em <a href="tecnologias.html" class="text-asj-blue hover:text-asj-blue-dark underline">Tecnologias</a>.</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-asj-gray-light p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-center text-center border border-transparent hover:border-asj-blue">
+                        <div class="text-asj-blue mb-6 text-5xl">
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <h3 class="text-xl font-montserrat font-bold text-asj-gray-extradark mb-3">Agricultura de Precisão</h3>
+                        <p class="text-asj-gray font-roboto text-sm mb-5 flex-grow leading-relaxed">GPS e sensores IoT para otimizar recursos.</p>
+                        <a href="tecnologias.html#agricultura-precisao" class="text-asj-blue hover:text-asj-blue-dark font-semibold transition duration-300 group text-sm mt-auto">Saiba Mais <i class="fas fa-chevron-right ml-1 transform group-hover:translate-x-0.5 transition-transform"></i></a>
+                    </div>
+                    <div class="bg-asj-gray-light p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-center text-center border border-transparent hover:border-asj-blue">
+                        <div class="text-asj-blue mb-6 text-5xl">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="text-xl font-montserrat font-bold text-asj-gray-extradark mb-3">Automação Agrícola</h3>
+                        <p class="text-asj-gray font-roboto text-sm mb-5 flex-grow leading-relaxed">Sistemas de piloto automático e drones.</p>
+                        <a href="tecnologias.html#automacao-agricola" class="text-asj-blue hover:text-asj-blue-dark font-semibold transition duration-300 group text-sm mt-auto">Saiba Mais <i class="fas fa-chevron-right ml-1 transform group-hover:translate-x-0.5 transition-transform"></i></a>
+                    </div>
+                    <div class="bg-asj-gray-light p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-center text-center border border-transparent hover:border-asj-blue">
+                        <div class="text-asj-blue mb-6 text-5xl">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-montserrat font-bold text-asj-gray-extradark mb-3">Monitoramento</h3>
+                        <p class="text-asj-gray font-roboto text-sm mb-5 flex-grow leading-relaxed">Dados em tempo real para decisões estratégicas.</p>
+                        <a href="tecnologias.html#monitoramento" class="text-asj-blue hover:text-asj-blue-dark font-semibold transition duration-300 group text-sm mt-auto">Saiba Mais <i class="fas fa-chevron-right ml-1 transform group-hover:translate-x-0.5 transition-transform"></i></a>
+                    </div>
+                    <div class="bg-asj-gray-light p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col items-center text-center border border-transparent hover:border-asj-blue">
+                        <div class="text-asj-blue mb-6 text-5xl">
+                            <i class="fas fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="text-xl font-montserrat font-bold text-asj-gray-extradark mb-3">Componentes</h3>
+                        <p class="text-asj-gray font-roboto text-sm mb-5 flex-grow leading-relaxed">Chicotes elétricos robustos e duráveis.</p>
+                        <a href="tecnologias.html#componentes" class="text-asj-blue hover:text-asj-blue-dark font-semibold transition duration-300 group text-sm mt-auto">Saiba Mais <i class="fas fa-chevron-right ml-1 transform group-hover:translate-x-0.5 transition-transform"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-asj-blue-dark text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-asj-blue-light font-semibold tracking-wider uppercase text-sm">Nossos Valores</span>
+                    <h2 class="text-3xl md:text-4xl font-montserrat font-bold mt-3">Por que Escolher a ASJ Tecnologia?</h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+                    <div class="text-center p-6 rounded-lg hover:bg-white/10 transition-colors duration-300">
+                        <div class="text-asj-blue mb-5 inline-block p-4 bg-white/5 rounded-full">
+                            <i class="fas fa-lightbulb text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-montserrat font-semibold mb-2">Inovação</h3>
+                        <p class="font-roboto text-sm opacity-90 leading-relaxed">Tecnologias de ponta para manter seu agronegócio competitivo.</p>
+                    </div>
+                     <div class="text-center p-6 rounded-lg hover:bg-white/10 transition-colors duration-300">
+                        <div class="text-asj-blue mb-5 inline-block p-4 bg-white/5 rounded-full">
+                            <i class="fas fa-check-circle text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-montserrat font-semibold mb-2">Confiabilidade</h3>
+                        <p class="font-roboto text-sm opacity-90 leading-relaxed">Soluções testadas para desempenho consistente no campo.</p>
+                    </div>
+                    <div class="text-center p-6 rounded-lg hover:bg-white/10 transition-colors duration-300">
+                        <div class="text-asj-blue mb-5 inline-block p-4 bg-white/5 rounded-full">
+                            <i class="fas fa-headset text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-montserrat font-semibold mb-2">Suporte</h3>
+                        <p class="font-roboto text-sm opacity-90 leading-relaxed">Equipe dedicada para suporte técnico ágil e eficaz.</p>
+                    </div>
+                    <div class="text-center p-6 rounded-lg hover:bg-white/10 transition-colors duration-300">
+                        <div class="text-asj-blue mb-5 inline-block p-4 bg-white/5 rounded-full">
+                            <i class="fas fa-leaf text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-montserrat font-semibold mb-2">Sustentabilidade</h3>
+                        <p class="font-roboto text-sm opacity-90 leading-relaxed">Soluções que promovem eficiência e preservação ambiental.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-last md:order-first pr-0 md:pr-8">
+                        <span class="text-asj-blue font-semibold tracking-wider uppercase text-sm">Sobre a ASJ</span>
+                        <h2 class="text-3xl md:text-4xl font-montserrat font-bold text-asj-gray-extradark my-4">Mais de 15 Anos de Inovação</h2>
+                        <p class="text-asj-gray font-roboto text-lg mb-6 leading-relaxed">
+                            Fundada em 2009 em Ribeirão Preto, SP, a ASJ Tecnologia lidera o agronegócio com soluções inovadoras. Saiba mais em <a href="sobre.html" class="text-asj-blue hover:text-asj-blue-dark underline">Sobre Nós</a>.
+                        </p>
+                        <a href="sobre.html" class="bg-asj-blue hover:bg-asj-blue-dark text-white font-semibold py-3 px-8 rounded-md transition duration-300 group shadow-md hover:shadow-lg transform hover:scale-105">
+                            Nossa História <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="https://static.wixstatic.com/media/df660f_cfa0f84776f5490381a48d1b38ff7ecb~mv2.jpg" alt="Equipe ASJ Tecnologia em ação no campo" class="rounded-xl shadow-xl w-full max-w-lg h-auto object-cover aspect-[4/3]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 md:py-28 bg-cover bg-center relative" style="background-image: url('https://static.wixstatic.com/media/df660f_ff8c780cc0d64063912acd3d1dc73927~mv2.jpg');">
+             <div class="absolute inset-0 bg-asj-blue/100"></div> <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h2 class="text-3xl md:text-4xl font-montserrat font-bold text-white mb-6">Descubra a ASJ Tecnologia</h2>
+                <p class="text-gray-100 text-lg md:text-xl font-roboto mb-10 max-w-2xl mx-auto">Explore nossas tecnologias, atuação e como podemos ajudar seu agronegócio.</p>
+                <a href="https://wa.me/+5519999991234" target="_blank" class="bg-asj-blue hover:bg-asj-blue-dark text-white font-bold py-3.5 px-10 rounded-lg text-lg transition duration-300 shadow-xl transform hover:scale-105">
+                    <i class="fab fa-whatsapp mr-2"></i>Fale Agora
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-asj-gray-extradark text-gray-400 py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10 pb-10 border-b border-asj-gray-dark">
+                <div class="lg:col-span-2 pr-0 lg:pr-8">
+                    <h3 class="text-2xl font-montserrat font-bold text-white mb-5">
+                        <span class="text-asj-blue">ASJ</span><span class="text-asj-blue">.</span><span class="text-asj-blue">Tecnologia</span>
+                    </h3>
+                    <p class="font-roboto text-sm leading-relaxed opacity-80 mb-6">
+                        Há mais de 15 anos, a ASJ Tecnologia inova o agronegócio com soluções em tecnologia e sustentabilidade, com sede em Ribeirão Preto.
+                    </p>
+                    <div class="flex space-x-5 mb-6">
+                        <a href="https://www.facebook.com/asjtecnologia" target="_blank" aria-label="Facebook da ASJ Tecnologia" class="text-gray-400 hover:text-asj-blue transition duration-300 transform hover:scale-110"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="https://www.instagram.com/asjtecnologia" target="_blank" aria-label="Instagram da ASJ Tecnologia" class="text-gray-400 hover:text-asj-blue transition duration-300 transform hover:scale-110"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="https://www.linkedin.com/company/asjtecnologia" target="_blank" aria-label="LinkedIn da ASJ Tecnologia" class="text-gray-400 hover:text-asj-blue transition duration-300 transform hover:scale-110"><i class="fab fa-linkedin-in text-xl"></i></a>
+                        <a href="https://wa.me/+5519999991234" target="_blank" aria-label="WhatsApp da ASJ Tecnologia" class="text-gray-400 hover:text-asj-blue transition duration-300 transform hover:scale-110"><i class="fab fa-whatsapp text-xl"></i></a>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-montserrat font-semibold text-white mb-4">Receba Novidades</h4>
+                        <form action="https://formspree.io/f/your-form-id" method="POST" class="flex flex-col sm:flex-row gap-2">
+                            <input type="email" name="_replyto" placeholder="Seu e-mail" class="p-2.5 rounded-md text-asj-gray-dark bg-asj-gray-light focus:outline-none focus:ring-2 focus:ring-asj-blue w-full sm:w-auto flex-grow" required>
+                            <button type="submit" class="bg-asj-blue hover:bg-asj-blue-dark text-white font-semibold py-2.5 px-6 rounded-md transition duration-300">Assinar</button>
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-montserrat font-semibold text-white mb-6">Navegação</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-asj-blue transition duration-300 opacity-80 hover:opacity-100">Início</a></li>
+                        <li><a href="sobre.html" class="hover:text-asj-blue transition duration-300 opacity-80 hover:opacity-100">Sobre Nós</a></li>
+                        <li><a href="tecnologias.html" class="hover:text-asj-blue transition duration-300 opacity-80 hover:opacity-100">Tecnologias</a></li>
+                        <li><a href="atuacao.html" class="hover:text-asj-blue transition duration-300 opacity-80 hover:opacity-100">Atuação</a></li>
+                        <li><a href="contato.html" class="hover:text-asj-blue transition duration-300 opacity-80 hover:opacity-100">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-montserrat font-semibold text-white mb-6">Contato</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-asj-blue flex-shrink-0"></i>
+                            <span class="opacity-80">R. Guatapará, 227 - Vila Virginia<br>Ribeirão Preto, SP - 14030-060</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-asj-blue flex-shrink-0"></i>
+                            <a href="tel:+551934221234" class="hover:text-asj-blue transition duration-300 opacity-80 hover:opacity-100">(19) 3422-1234</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-whatsapp mr-3 text-asj-blue flex-shrink-0"></i>
+                            <a href="https://wa.me/+5519999991234" class="hover:text-asj-blue transition duration-300 opacity-80 hover:opacity-100">(19) 99999-1234</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-asj-blue flex-shrink-0"></i>
+                            <a href="mailto:contato@asjtecnologia.com.br" class="hover:text-asj-blue transition duration-300 opacity-80 hover:opacity-100">contato@asjtecnologia.com.br</a>
+                        </li>
+                    </ul>
+                    <p class="mt-4 text-sm opacity-80">ASJ Industria e Comercio de Equip. Eletricos Ltda-EPP<br>CNPJ: 17.221.421/0001-45</p>
+                </div>
+            </div>
+            <div class="pt-8 text-center text-sm">
+                <p class="opacity-70">© <span id="currentYear"></span> ASJ Tecnologia. Todos os direitos reservados.</p>
+                <p class="mt-1 opacity-70">Desenvolvido com <i class="fas fa-heart text-asj-blue"></i> por ASJ Tecnologia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle do menu móvel
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const body = document.body; // Para desabilitar scroll quando o menu estiver aberto
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            // Altera o ícone do botão do menu
+            const icon = mobileMenuButton.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                body.style.overflow = ''; // Permite scroll
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+                body.style.overflow = 'hidden'; // Impede scroll
+            }
+        });
+
+        // Fecha o menu móvel se um link for clicado (para navegação na mesma página ou para outras páginas)
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.querySelector('i').classList.remove('fa-times');
+                mobileMenuButton.querySelector('i').classList.add('fa-bars');
+                body.style.overflow = ''; // Permite scroll
+            });
+        });
+        
+        // Ano dinâmico no rodapé
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Efeito de encolher o header ao rolar a página
+        const header = document.querySelector('header');
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > 50) { // Adiciona classe quando rolar mais de 50px
+                header.classList.add('py-2', 'shadow-xl');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2', 'shadow-xl');
+            }
+
+            // Esconde o header ao rolar para baixo, mostra ao rolar para cima (opcional)
+            // if (scrollTop > lastScrollTop && scrollTop > 100) { // Esconde se rolar para baixo e já passou de 100px
+            //     header.style.top = `-${header.offsetHeight}px`;
+            // } else { // Mostra se rolar para cima
+            //     header.style.top = '0';
+            // }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para lidar com o scroll no topo
+        });
+
+    </script>
+</body>
+</html>
